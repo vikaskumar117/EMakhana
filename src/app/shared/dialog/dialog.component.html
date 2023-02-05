@@ -2,7 +2,7 @@
     <h5 class="modal-title"><b>{{title}}</b></h5>
     <button aria-label="Close" class="close" type="button" (click)="close('cancle')"><span aria-hidden="true">×</span></button>
   </div>
-  
+
   <!-- <div class="modal-body">
   {{data}}
   </div> -->
@@ -15,7 +15,7 @@
       <div class="col-sm-3"><b>Sub Total</b></div>
     <div class="row">
       <div class="col-sm-3">
-        <img height="100px; width:100px;" [src]="data.src" class="card-img-top" alt="Fissure in Sandstone"/>
+        <img height="100px; width:100px;" [src]="data.Src" class="card-img-top" alt="Fissure in Sandstone"/>
     </div>
     <div class="col-sm-3" style="margin-top: 30px;">
       {{data.Price}}
@@ -29,11 +29,11 @@
     </div>
     </div>
   </div>
-  
+
   <div class="modal-footer text-center">
-      <button type="button" class="btn btn-primary text-center" aria-label="click button to ok" 
+      <button type="button" class="btn btn-primary text-center" aria-label="click button to ok"
             (click)="close('ok')">{{buttonOK}}</button>
        <button *ngIf="buttonCancle" type="button" class="btn btn-secondary text-center" aria-label="click button to Cancel"
             (click)="close('cancle')">{{buttonCancle}}</button>
     </div>
-  
+

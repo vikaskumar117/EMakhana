@@ -5,13 +5,13 @@
         </div>
         <input type="text" class="form-control" placeholder="Search a product" aria-label="Username" aria-describedby="basic-addon1">
       </div>
-    
+
     <div class="row">
-        <div class="col-sm-4">
+        <!-- <div class="col-sm-4">
             <img height="100px; width:100px;" src="assets/makhana/M700.jpg" class="card-img-top" alt="Fissure in Sandstone"/>
             <div class="card-body">
             <h5 class="card-title">₹ 700</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <p class="card-text">Makhana is a type of seed derived from the Euryale ferox plant. They're also sometimes referred to as fox nuts or lotus seeds. Makhanas are widely cultivated throughout Asia and often used in traditional forms of medicine to treat various conditions</p>
             <button type="button" (click)="addToCartClick('700', 'assets/makhana/M700.jpg')" class="btn btn-success">Add to Cart</button>
             </div>
         </div>
@@ -30,6 +30,15 @@
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
             <button type="button" (click)="addToCartClick('500', 'assets/makhana/M500.jfif')"  class="btn btn-success">Add to Cart</button>
             </div>
+        </div> -->
+
+        <div class="col-sm-4" *ngFor="let item of lstMakhana">
+          <img height="100px; width:100px;" [src]="item.Src" class="card-img-top" alt="Fissure in Sandstone"/>
+          <div class="card-body">
+          <h5 class="card-title">{{item.Name}}</h5>
+          <p class="card-text">{{item.Description}}</p>
+          <button type="button" (click)="addToCartClick(item.Price, item.Src)" class="btn btn-success">Add to Cart</button>
           </div>
       </div>
+    </div>
 </div>

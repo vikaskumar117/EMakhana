@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HomeComponent } from './home/home.component';
-
+import { MakhanaService } from './makhana-service.service';
 
 
 @NgModule({
@@ -9,6 +9,7 @@ import { HomeComponent } from './home/home.component';
   imports: [
     CommonModule
   ],
-  exports: [HomeComponent]
+  exports: [HomeComponent],
+  providers: [MakhanaService]
 })
 export class HomeModule { }

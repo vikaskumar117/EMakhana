@@ -113,12 +113,12 @@
     },
     "whitespace": {
       "options": [
-        "check-branch",
-        "check-decl",
-        "check-operator",
-        "check-separator",
-        "check-type",
-        "check-typecast"
+        // "check-branch",
+        // "check-decl",
+        // "check-operator",
+        // "check-separator",
+        // "check-type",
+        // "check-typecast"
       ]
     },
     "component-class-suffix": true,

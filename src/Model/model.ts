@@ -3,5 +3,5 @@ export class MakhanaDetail{
     Price: string = "";
     Description:string = "";
     Quantity: number = 1;
-    src: string= "";
+    Src: string= "";
   }

@@ -1,0 +1,30 @@
+<div class="container" style="height: 400px; margin-top: 100px;">
+    <div class="row">
+        <div class="col-sm-6">
+            <h1 style="margin: 0">Login</h1>
+            <form>
+                <div class="row">
+                    <div class="col-sm-4"><b>Email:</b></div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-4"><input type="email" name="email"  /></div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-4"><b>Password:</b></div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-4"><input type="password" name="password"  /></div>
+                </div><br/>
+                <div class="row">
+                    <div class="col-sm-1"> <button type="button" (click)="login()" class="btn btn-success">Login</button></div>
+                </div><br/>
+                <div class="row">
+                    <div style="color: #2874f0;font-weight: 500; cursor: pointer;"> <a (click)="register()">New to EMakhana? Create an account</a></div>
+                </div>
+            </form>
+        </div>
+        <div class="col-sm-6">
+            <app-register *ngIf="show"></app-register>
+        </div>
+    </div>
+</div>
